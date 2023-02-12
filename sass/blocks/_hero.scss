@@ -24,7 +24,12 @@
                 margin: 40px 0;
             }
             .hero__box--btn{
-                @include buttonmix( 15px 40px, #FCB72B, none , 'Space Mono', 700, 15px, 25px, #FFFFFF,)
+                @include buttonmix( 15px 40px, #FCB72B, 2px solid #FCB72B, 'Space Mono', 700, 15px, 25px, #FFFFFF,)
+            }
+            .hero__box--btn:hover{
+                border: 2px solid #FCB72B;
+                background-color: transparent;
+                color: #FCB72B;
             }
         }
     }

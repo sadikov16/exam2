@@ -19,9 +19,17 @@
                     line-height: 25px;
                     color: #939CAA;
                 }
+                .header__link:hover{
+                    color: #FCB72B;
+                }
             }
             .header__btn{
-                @include buttonmix( 15px 40px, #FCB72B, none , 'Space Mono', 700, 15px, 25px, #FFFFFF,)
+                @include buttonmix( 15px 40px, #FCB72B, 2px solid #FCB72B , 'Space Mono', 700, 15px, 25px, #FFFFFF,)
+            }
+            .header__btn:hover{
+                border: 2px solid #FCB72B;
+                background-color: transparent;
+                color: #FCB72B;
             }
         }
     }
@@ -31,6 +39,9 @@
         .container{
             padding: 0 15px;
             .header__box{
+                .header__list{
+                    gap: 10px;
+                }
                 .header__btn{
                     @include buttonmix( 5px 10px, #FCB72B, none , 'Space Mono', 700, 15px, 25px, #FFFFFF,)
                 }

@@ -15,6 +15,10 @@ body {
   font-family: "Space Mono";
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* lexend-deca-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -76,20 +80,31 @@ body {
   line-height: 25px;
   color: #939CAA;
 }
+.header .container .header__box .header__list .header__link:hover {
+  color: #FCB72B;
+}
 .header .container .header__box .header__btn {
   padding: 15px 40px;
   background-color: #FCB72B;
-  border: none;
+  border: 2px solid #FCB72B;
   font-family: "Space Mono";
   font-weight: 700;
   font-size: 15px;
   line-height: 25px;
   color: #FFFFFF;
 }
+.header .container .header__box .header__btn:hover {
+  border: 2px solid #FCB72B;
+  background-color: transparent;
+  color: #FCB72B;
+}
 
 @media screen and (min-width: 426px) and (max-width: 768px) {
   .header .container {
     padding: 0 15px;
+  }
+  .header .container .header__box .header__list {
+    gap: 10px;
   }
   .header .container .header__box .header__btn {
     padding: 5px 10px;
@@ -149,12 +164,17 @@ body {
 .hero .container .hero__box .hero__box--btn {
   padding: 15px 40px;
   background-color: #FCB72B;
-  border: none;
+  border: 2px solid #FCB72B;
   font-family: "Space Mono";
   font-weight: 700;
   font-size: 15px;
   line-height: 25px;
   color: #FFFFFF;
+}
+.hero .container .hero__box .hero__box--btn:hover {
+  border: 2px solid #FCB72B;
+  background-color: transparent;
+  color: #FCB72B;
 }
 
 @media screen and (min-width: 426px) and (max-width: 768px) {
@@ -282,12 +302,17 @@ body {
 .good_sides .container .good_sides__list .good_sides__item .good_sides__subbox .good_sides__subbox--btn {
   padding: 15px 40px;
   background-color: #FCB72B;
-  border: none;
+  border: 2px solid #FCB72B;
   font-family: "Space Mono";
   font-weight: 700;
   font-size: 15px;
   line-height: 25px;
   color: #FFFFFF;
+}
+.good_sides .container .good_sides__list .good_sides__item .good_sides__subbox .good_sides__subbox--btn:hover {
+  border: 2px solid #FCB72B;
+  background-color: transparent;
+  color: #FCB72B;
 }
 .good_sides .container .good_sides__list .good_sides__item .good_sides__imgbox {
   width: 430px;
@@ -446,6 +471,9 @@ body {
   line-height: 25px;
   color: #939CAA;
 }
+.footer .container .footer__box .footer__list .footer__link:hover {
+  color: #FCB72B;
+}
 .footer .container .footer__box .footer__btn {
   padding: 15px 40px;
   background-color: #FCB72B;
@@ -456,13 +484,37 @@ body {
   line-height: 25px;
   color: #FFFFFF;
 }
+.footer .container .footer__box .icon {
+  width: 24px;
+  height: 24px;
+  fill: #FCB72B;
+  transition: 0.5s;
+}
+.footer .container .footer__box .icon:hover {
+  transition: 0.3s;
+  transform: scale(1.2);
+  fill: #E5ECF4;
+}
+.footer .container .footer__box .icon:active {
+  fill: #f0a1a1;
+}
+.footer .container .footer__box .svg__icon {
+  display: flex;
+  gap: 24px;
+}
 
 @media screen and (min-width: 426px) and (max-width: 768px) {
   .footer {
-    padding: 35px 0 10px 40px;
+    padding: 35px 0 10px 10px;
   }
   .footer .container {
     padding: 0;
+  }
+  .footer .container .footer__box .footer__list {
+    gap: 10px;
+  }
+  .footer .container .footer__box .svg__icon {
+    gap: 10px;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 425px) {

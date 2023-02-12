@@ -17,21 +17,53 @@
                     line-height: 25px;
                     color: #939CAA;
                 }
+                .footer__link:hover{
+                    color: #FCB72B;
+                }
             }
             .footer__btn{
                 @include buttonmix( 15px 40px, #FCB72B, none , 'Space Mono', 700, 15px, 25px, #FFFFFF,)
+            }
+            .icon{
+                width: 24px;
+                height: 24px;
+                fill: #FCB72B;
+                transition: 0.5s;
+                
+                &:hover{
+                    transition: 0.3s;
+                    transform: scale(1.2);
+                    fill: #E5ECF4;
+                }
+                
+                &:active{
+                    fill: #f0a1a1;
+                }
+            }
+            .svg__icon{
+                display: flex;
+                gap: 24px;
             }
         }
     }
 }
 @media screen and (min-width:426px) and (max-width:768px) {
     .footer{
-        padding: 35px 0 10px 40px;
+        padding: 35px 0 10px 10px;
         .container{
             padding: 0;
+            .footer__box{
+                .footer__list{
+                    gap: 10px;
+                    
+                }
+                .svg__icon{
+                    gap: 10px;
+                } 
+            }
         }
-    }   
-}    
+    } 
+}      
 @media screen and (min-width:320px) and (max-width:425px) {
     .footer{
         padding: 64px 100px;

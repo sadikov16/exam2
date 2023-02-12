@@ -35,24 +35,6 @@
     }
 }
 @media screen and (min-width:426px) and (max-width:768px) {
-    .hero{
-        background-image: url(/images/background.jpg);
-        margin-top: 35px;
-        .container{
-            .hero__box{
-                margin: 0 auto;
-                flex-direction: column;
-                align-items: center;
-                display: flex;
-                .hero__box--title{
-                    text-align: center;
-                }
-                .hero__box--text{
-                    text-align: center;
-                }
-            }
-        }
-    }
 }
 @media screen and (min-width:320px) and (max-width:425px) {
     .hero{

@@ -177,24 +177,6 @@ html {
   color: #FCB72B;
 }
 
-@media screen and (min-width: 426px) and (max-width: 768px) {
-  .hero {
-    background-image: url(/images/background.jpg);
-    margin-top: 35px;
-  }
-  .hero .container .hero__box {
-    margin: 0 auto;
-    flex-direction: column;
-    align-items: center;
-    display: flex;
-  }
-  .hero .container .hero__box .hero__box--title {
-    text-align: center;
-  }
-  .hero .container .hero__box .hero__box--text {
-    text-align: center;
-  }
-}
 @media screen and (min-width: 320px) and (max-width: 425px) {
   .hero {
     background-image: url(/images/mobile\ backgroun.png);
@@ -432,7 +414,6 @@ html {
 }
 @media screen and (min-width: 320px) and (max-width: 425px) {
   .call_to_action {
-    margin: 0 auto;
     padding: 0;
   }
   .call_to_action .container .call_to_action__box {

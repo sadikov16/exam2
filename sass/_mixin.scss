@@ -1,0 +1,10 @@
+@mixin buttonmix ($p, $bg, $b, $ff, $fw, $fs, $lh, $c, ) {
+    padding: $p;
+    background-color: $bg;
+    border: $b;
+    font-family: $ff;
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    color: $c;
+}

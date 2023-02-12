@@ -1,0 +1,118 @@
+.good_sides{
+    margin-top: 150px;
+    .container{
+        .good_sides__list{
+            .good_sides__item{
+                margin-top: 160px;
+                justify-content: space-between;
+                display: flex;
+                &:nth-child(2){
+                    flex-direction: row-reverse;
+                }
+                .good_sides__subbox{
+                    max-width: 445px;
+                    margin-top: 50px;
+                    .good_sides__subbox--title{
+                        font-family: 'Space Mono';
+                        font-weight: 700;
+                        font-size: 48px;
+                        line-height: 48px;
+                        letter-spacing: -2.14286px;
+                        color: #495567;
+                    }
+                    .good_sides__subbox--text{
+                        margin: 24px 0 40px 0;
+                        font-family: 'Lexend Deca';
+                        font-size: 15px;
+                        line-height: 25px;
+                        color: #939CAA;
+                    }
+                    .good_sides__subbox--btn{
+                        @include buttonmix( 15px 40px, #FCB72B, none , 'Space Mono', 700, 15px, 25px, #FFFFFF,)
+                    }
+                }
+                .good_sides__imgbox{
+                    width: 430px;
+                    height: 430px;
+                    img{
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:426px) and (max-width:768px) {
+    .good_sides{
+        margin-top: 150px;
+        .container{
+            .good_sides__list{
+                .good_sides__item{
+                    flex-direction: column-reverse;
+                    display: flex;
+                    align-items: center;
+                    &:nth-child(2){
+                        flex-direction: column-reverse;
+                    }
+                    .good_sides__subbox{
+                        align-items: center;
+                        display: flex;
+                        flex-direction: column;
+                        .good_sides__subbox--title{
+                            text-align: center;
+                        }
+                        .good_sides__subbox--text{
+                            text-align: center;
+                        }
+                    }
+                    .good_sides__imgbox{
+                        width: 400px;
+                        height: 400px;
+                        img{
+                            width: 300px;
+                            height: 300px;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 425px) {
+    .good_sides{
+        margin-top: 150px;
+        .container{
+            .good_sides__list{
+                .good_sides__item{
+                    flex-direction: column-reverse;
+                    display: flex;
+                    align-items: center;
+                    &:nth-child(2){
+                        flex-direction: column-reverse;
+                    }
+                    .good_sides__subbox{
+                        align-items: center;
+                        display: flex;
+                        flex-direction: column;
+                        .good_sides__subbox--title{
+                            text-align: center;
+                        }
+                        .good_sides__subbox--text{
+                            text-align: center;
+                        }
+                    }
+                    .good_sides__imgbox{
+                        width: 250px;
+                        height: 250px;
+                        img{
+                            height: 250px;
+                            width: 250px;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

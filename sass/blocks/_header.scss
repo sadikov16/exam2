@@ -1,0 +1,60 @@
+.header{
+    padding-top: 34px;
+    .container{
+        .header__box{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .header__img{
+                display: none;
+            }
+            .header__list{
+                display: flex;
+                justify-content: space-between;
+                gap: 32px;
+                .header__link{
+                    font-family: 'Space Mono';
+                    font-weight: 700;
+                    font-size: 15px;
+                    line-height: 25px;
+                    color: #939CAA;
+                }
+            }
+            .header__btn{
+                @include buttonmix( 15px 40px, #FCB72B, none , 'Space Mono', 700, 15px, 25px, #FFFFFF,)
+            }
+        }
+    }
+}
+@media screen and (min-width:426px) and (max-width:768px) {
+    .header{
+        .container{
+            padding: 0 15px;
+            .header__box{
+                .header__btn{
+                    @include buttonmix( 5px 10px, #FCB72B, none , 'Space Mono', 700, 15px, 25px, #FFFFFF,)
+                }
+            }
+        }
+    }   
+}    
+@media screen and (min-width:320px) and (max-width:425px) {
+    .header{
+        .container{
+            padding: 0 15px;
+            .header__box{
+                gap: 100px;
+                justify-content: normal;
+                .header__img{
+                    display: inline;
+                }
+                .header__list{
+                    display: none;
+                }
+                .header__btn{
+                    display: none;
+                }
+            }
+        }
+    }
+}

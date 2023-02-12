@@ -1,0 +1,71 @@
+.hero{
+    background-image: url(/images/Bitmap\ \(1\).jpg);
+    padding: 153px 0 152px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 35px;
+    .container{
+        .hero__box{
+            max-width: 500px;
+            .hero__box--title{
+                max-width: 500px;
+                font-family: 'Space Mono';
+                font-weight: 700;
+                font-size: 56px;
+                line-height: 56px;
+                letter-spacing: -2.5px;
+                color: #FFFFFF;
+            }
+            .hero__box--text{
+                font-family: 'Lexend Deca';
+                font-size: 15px;
+                line-height: 25px;
+                color: #FFFFFF;
+                margin: 40px 0;
+            }
+            .hero__box--btn{
+                @include buttonmix( 15px 40px, #FCB72B, none , 'Space Mono', 700, 15px, 25px, #FFFFFF,)
+            }
+        }
+    }
+}
+@media screen and (min-width:426px) and (max-width:768px) {
+    .hero{
+        background-image: url(/images/background.jpg);
+        margin-top: 35px;
+        .container{
+            .hero__box{
+                margin: 0 auto;
+                flex-direction: column;
+                align-items: center;
+                display: flex;
+                .hero__box--title{
+                    text-align: center;
+                }
+                .hero__box--text{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:320px) and (max-width:425px) {
+    .hero{
+        background-image: url(/images/mobile\ backgroun.png);
+        margin-top: 35px;
+        .container{
+            .hero__box{
+                margin: 0 auto;
+                flex-direction: column;
+                align-items: center;
+                display: flex;
+                .hero__box--title{
+                    text-align: center;
+                }
+                .hero__box--text{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
